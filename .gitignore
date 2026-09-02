@@ -1,0 +1,18 @@
+# Python virtual environment
+.venv/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# Secrets and local settings
+.env
+
+# Local uploaded documents and generated vector data
+data/uploads/
+vector_store/
+
+# IDE and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db

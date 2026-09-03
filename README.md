@@ -180,10 +180,10 @@ This example demonstrates why successful retrieval alone does not guarantee a fa
 - [x] Source-grounded responses
 - [x] Missing-context refusal
 - [x] Interactive command-line questions
-- [ ] Automated RAG evaluation suite
+- [x] Automated RAG evaluation suite
 - [ ] PDF and DOCX document ingestion
 - [ ] Persistent vector database
-- [ ] FastAPI backend
+- [x] FastAPI backend
 - [ ] React user interface
 - [ ] RAID extraction using structured output
 - [ ] Hybrid search and reranking

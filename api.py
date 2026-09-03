@@ -2,6 +2,7 @@ from functools import lru_cache
 
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
+from fastapi.middleware.cors import CORSMiddleware
 
 from rag_demo import (
     DOCUMENT_PATH,
@@ -28,6 +29,20 @@ app = FastAPI(
         "with grounded answers and source citations."
     ),
     version="0.2.0",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+   allow_origins=[
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:5174",
+    "http://127.0.0.1:5174",
+
+],
+    allow_credentials=False,
+    allow_methods=["GET", "POST"],
+    allow_headers=["Content-Type"],
 )
 
 class AskRequest(BaseModel):

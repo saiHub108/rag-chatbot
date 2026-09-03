@@ -1,0 +1,48 @@
+PROJECT: Atlas Digital Payments Modernization
+REPORTING PERIOD: August 2026
+PROJECT MANAGER: Sai Burgula
+OVERALL STATUS: AMBER
+TARGET RELEASE DATE: October 30, 2026
+
+EXECUTIVE SUMMARY
+The Atlas program is modernizing the legacy payment-processing platform.
+Development is 68 percent complete. The project remains within its approved
+budget, but the release date is at risk because performance testing cannot
+begin until the external test environment is available.
+
+SPRINT METRICS
+The team completed 42 of 50 planned story points in Sprint 14.
+Sprint velocity for the previous three sprints was 46, 44, and 42 story points.
+Five defects remain open: zero Severity 1, one Severity 2, three Severity 3,
+and one Severity 4.
+
+RISKS
+RISK-001: The external performance-test environment may not be available by
+September 12. Probability is high and impact is high. Ravi Kumar owns the
+risk. The mitigation is to arrange a temporary cloud-based test environment
+by September 8.
+
+RISK-002: Two developers will be unavailable during the final integration
+sprint. Probability is medium and impact is medium. Ananya Rao owns the risk.
+The mitigation is to cross-train two additional engineers before September 20.
+
+ISSUES
+ISSUE-014: Payment reconciliation tests are failing for transactions involving
+partial refunds. Priya Shah owns the issue. The target resolution date is
+September 6. The issue is currently in progress.
+
+DEPENDENCIES
+DEP-007: The Security team must complete the penetration test before production
+approval. The dependency owner is Michael Chen. The committed completion date
+is October 10.
+
+DEP-008: The external vendor must provide the performance-test environment.
+The dependency owner is Ravi Kumar. The original due date was September 5,
+and the revised due date is September 12.
+
+DECISIONS
+DEC-004: The architecture board approved PostgreSQL as the target database on
+August 18, 2026. Oracle will remain read-only for 90 days after migration.
+
+DEC-005: The steering committee approved a temporary cloud-based performance
+environment with a maximum additional cost of USD 8,000.

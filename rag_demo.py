@@ -117,10 +117,13 @@ def main():
     chunks = load_document(DOCUMENT_PATH)
     chunk_vectors = create_embeddings(chunks)
 
-    question = (
-        "What is threatening the performance testing schedule, "
-        "who owns it, and what mitigation is planned?"
-    )
+    question = input(
+        "\nAsk a question about the project: "
+    ).strip()
+
+    if not question:
+        print("Please enter a question.")
+        return
 
     retrieved_chunks = retrieve_relevant_chunks(
         question,
